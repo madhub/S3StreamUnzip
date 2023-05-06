@@ -5,6 +5,8 @@ It uses CSharpziplib [zipinputstream](https://github.com/icsharpcode/SharpZipLib
 For **each zip entry** found, if the **size > 50 MB** and temorary file will be created else , it will be loaded in memory.
 It uses AWS TransferUtility to upload the extracted zip file on disk or in memory. 
 
+> **_NOTE:_**  Inspired from Java based s3 stream zip project https://github.com/nejckorasa/s3-stream-unzip
+
 > **_NOTE:_**  If process is running in a memory constrained envionment consider useing workstation gc configuration 
 > More details of [GC types](https://learn.microsoft.com/en-us/dotnet/standard/garbage-collection/workstation-server-gc) 
 > Configure [GC types](https://learn.microsoft.com/en-us/dotnet/core/runtime-config/garbage-collector#workstation-vs-server) 
