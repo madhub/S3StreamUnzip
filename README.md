@@ -2,7 +2,7 @@
 This sample demonstrates unzipping of zip file stored in S3 bucket without loading whole zip file in to client memory/disk. 
 It uses CSharpziplib [zipinputstream](https://github.com/icsharpcode/SharpZipLib/blob/master/src/ICSharpCode.SharpZipLib/Zip/ZipInputStream.cs) to extract the zip entry iteratively. 
 
-For **each zip entry** found, if the **size > 50 MB** and temorary file will be created else , it will be loaded in memory.
+For **each zip entry** found, if the **size > 50 MB** and temporary file will be created else it will be loaded in memory.
 It uses AWS TransferUtility to upload the extracted zip file on disk or in memory. 
 
 > **_NOTE:_**  Inspired from Java based s3 stream zip project https://github.com/nejckorasa/s3-stream-unzip
